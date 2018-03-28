@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+
+  <body>
+        <div id="test12"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel">
+
+    function formatName(user) {
+        return user.firstName + ' ' + user.lastName;
+      };
+      
+      const user = {
+        firstName: 'Tony',
+        lastName: 'Stark'
+      };
+      
+      const element = (
+        <h1>
+          Hello, {formatName(user)}!
+        </h1>
+      );
+      
+      ReactDOM.render(
+        element,
+        document.getElementById('test12')
+      );
+
+</script>
+
+  </body>
+
+</html>
